@@ -1,9 +1,9 @@
 
 public class Group {
 
-	String groupName;
-	int counter=0;
-	Student[] students = new Student[10];
+	private String groupName;
+	private int counter=0;
+	private Student[] students = new Student[10];
 	
 	
 	
@@ -55,6 +55,7 @@ public class Group {
 		
 		if(students[i]!=null && students[i].getId()==id) {
 			students[i]=null;
+			counter--;
 			return true;
 		}else {
 			continue;
