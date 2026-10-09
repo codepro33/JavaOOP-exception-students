@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class Group {
 
@@ -62,5 +64,15 @@ public class Group {
 		}
 	}
 	return false;
+	}
+	
+	public void SortStudentsByLastName () {
+		
+		Arrays.sort(students,Comparator.nullsFirst(new StudentNameComparator()));
+		
+		for(Student student: students) {
+			System.out.println(student);
+		}
+		
 	}
 }

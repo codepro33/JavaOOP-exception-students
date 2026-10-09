@@ -6,6 +6,19 @@ public class Human {
 	private Gender gender;
 	
 	
+	
+	
+	public Human(String name, String surname, Gender gender) {
+		super();
+		this.name = name;
+		this.surname = surname;
+		this.gender = gender;
+	}
+	
+	public Human() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public String getName() {
 		return name;
 	}
